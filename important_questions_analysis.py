@@ -131,7 +131,7 @@ def extract_question_sentences(text, debug=False):
     return questions
 
 
-def extract_text_from_pdf(pdf_path, dpi=300):
+def extract_text_from_pdf(pdf_path, dpi=200):
     """Extract text from PDF using pytesseract OCR."""
     print(f"  Converting to images...")
     images = convert_from_path(pdf_path, dpi=dpi)
