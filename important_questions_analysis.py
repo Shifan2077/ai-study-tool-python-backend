@@ -12,6 +12,8 @@ import nltk
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.stem import PorterStemmer
+#pytessereact ext for host
+pytesseract.pytesseract.tesseract_cmd = "/usr/bin/tesseract"
 
 # Download required NLTK data (run once)
 try:
