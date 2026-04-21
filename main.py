@@ -7,6 +7,10 @@ import uuid
 
 app = FastAPI()
 
+@app.get("/healthz")
+def health():
+    return {"status": "ok"}
+
 # Allow CORS (for Angular)
 app.add_middleware(
     CORSMiddleware,
